@@ -1,0 +1,88 @@
+:root{
+    --Dark-cyan: hsl(158, 36%, 37%);/* pret h1 */
+    --Cream: hsl(30, 38%, 92%);/* bCKGROUND COLOR */
+    --Very-dark-blue: hsl(212, 21%, 14%);/* Scris h1 */
+    --Dark-grayish-blue: hsl(228, 12%, 48%);/* Scrisul din paragraf */
+    --White: hsl(0, 0%, 100%);/* scris de la buton */
+    --dark-green: hsl(158, 36%, 18%);
+}
+body{
+    margin:0;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Cream);
+    width: 100vw;
+    height: 100vh;
+}
+.main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 40vw;
+    border-radius: 10px;
+    background-color: var(--White);
+}
+.img{
+    width: 80%;
+    height: 100%;
+}
+.img img{
+    display: block;
+    width: 100%; /* Ajustează dimensiunea imaginii */
+    height: 100%;
+    border-radius: 10px 0 0 10px;
+    position: relative;
+}
+.description_box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1.5rem;
+    width: 50%;
+    height: 100%;
+}
+
+.description_box h1{
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin: 0;
+    color: var(--Very-dark-blue);
+}
+p{
+    color: var(--Dark-grayish-blue);
+}
+button{
+    width: 250px;
+    height: 50px;
+    margin-bottom: rem;
+    border-radius: 10px;
+    background-color: var(--Dark-cyan);
+    color: var(--White);
+    border: none;
+}
+button img{
+    margin-right: 15px;
+}
+.price{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.price h1{
+    color: var(--Dark-cyan);
+}
+.price h5{
+    font-weight: 50;
+    color: var(--Dark-grayish-blue);
+    text-decoration: line-through;
+}
+button:hover{
+    background-color: var(--dark-green);
+    cursor: pointer;
+}
