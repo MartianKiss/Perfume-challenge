@@ -86,3 +86,38 @@ button:hover{
     background-color: var(--dark-green);
     cursor: pointer;
 }
+@media only screen and (max-width: 375px) {
+    /* Stilează aici elementele pentru ecranele mici */
+
+    .container {
+        padding: 10px;
+    }
+
+    .main {
+        display: flex;
+        flex-direction: column !important; /* Pentru a aranja elementele pe verticală */
+        align-items: center; /* Centrează elementele */
+    }
+    .img img {
+        width: 100%;
+        height: auto;
+    }
+
+    .description_box {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .price h1 {
+        font-size: 1.5rem;
+    }
+
+    .price h5 {
+        font-size: 1rem;
+    }
+
+    button {
+        width: 100%;
+        font-size: 1rem;
+    }
+}
