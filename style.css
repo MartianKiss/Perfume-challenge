@@ -24,6 +24,7 @@ body{
     justify-content: center;
     align-items: center;
     width: 40vw;
+    height: 80vh;
     border-radius: 10px;
     background-color: var(--White);
 }
@@ -32,7 +33,7 @@ body{
     background-size: cover;
     background-position: center;
     width: 100%;
-    height: 100vh;
+    height: 100%;
 }
 .description_box{
     display: flex;
